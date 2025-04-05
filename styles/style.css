@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.draggable {
+
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: grab;
+    transition: transform 0.2s;
+}
+
+.draggable:active {
+    cursor: grabbing;
+    transform: scale(1.1);
+}
+
+#drop-zone-container {
+    display: inline-block;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.drop-zone {
+
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.drop-zone.correct {
+    background-color: #d4edda;
+}
+
+.drop-zone.incorrect {
+    background-color: #f8d7da;
+}
+
+.super_container{
+    display: flexbox;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre os containers */
+    align-items: center; /* Centraliza os containers */
+    width:100%;
+}
+.container{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas iguais */
+    border: 2px solid #ffffff;
+    width:100%;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Espaço entre o container e o footer */
+
+}
+.container_origem{
+    display: grid; /* Define o layout como Grid */
+    grid-template-columns: repeat(3, 1fr); /* Cria duas colunas iguais */
+    gap: 10px; /* Espaçamento entre as colunas e linhas */
+    border: 2px solid #ffffff;
+}
+.container_destino {
+    display: flex;
+    flex-direction: column; /* Alinha os DIVs verticalmente */
+    gap: 10px; /* Espaço entre os DIVs, opcional */
+    border: 2px solid #ffffff;
+    margin-left: auto;
+}
+.box {
+    display: block; /* Garante que cada DIV fique em sua própria linha */
+    margin-bottom: 10px; /* Adiciona espaço entre os DIVs, opcional */
+}
+
+.superior {
+    text-align: left; /* Centraliza o texto do placar */
+    border: 2px solid #ffffff; /* Linha separadora do placar */
+}
+#txt_acertos {
+    width: 30px; /* Ajusta o tamanho para caber 2 dígitos */
+    font-size: 1.2em; /* Aumenta um pouco o tamanho da fonte */
+    border: none; /* Remove a borda do input */
+    text-align: center; /* Centraliza o texto dentro do input */
+    outline: none; /* Remove o contorno ao selecionar o input */
+}
+#txt_erros {
+    width: 30px; /* Ajusta o tamanho para caber 2 dígitos */
+    font-size: 1.2em; /* Aumenta um pouco o tamanho da fonte */
+    border: none; /* Remove a borda do input */
+    text-align: center; /* Centraliza o texto dentro do input */
+    outline: none; /* Remove o contorno ao selecionar o input */
+}
+img {
+    width: 120px; /* Define a largura */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+  /* Estilo para o grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 10% 80% 10%; /* Três colunas de tamanhos iguais */
+    gap: 2px; /* Espaço entre as colunas */
+  }
+  .grid-item {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    text-align: center;
+    font-size: 18px;
+  }
+
