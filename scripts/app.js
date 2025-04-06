@@ -47,7 +47,7 @@ function mensagem_final()
 {
     const acertos = document.getElementById("txt_acertos");
     const erros = document.getElementById("txt_erros");
-    if (parseInt(acertos.value) == 7) {
+    if (parseInt(acertos.value) == 10) {
         alerta("PARABÉNS VOCÊ ACERTOU TODAS AS OPÇÕES!!!", "blue");
         const status = document.getElementById("txt_status");
         status.value = "FINALIZADO";
